@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Canvas Clone Game</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CopyCat Canvas</h1>
+    </header>
+
+    <div class="game-container">
+        <div>
+            <h2>Reference Image</h2>
+            <canvas id="refCanvas" width="300" height="300"></canvas>
+        </div>
+        <div>
+            <h2>Your Drawing</h2>
+            <canvas id="drawCanvas" width="300" height="300"></canvas>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="calculateScore()">Submit & Score</button>
+        <div id="scoreDisplay">Score: --%</div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
